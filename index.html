@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queen's Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- N-queen placement  -->
+    <header>Queen's Home</header>
+
+
+    <!--Starting page -->
+    <section id="rules">
+        <!-- rules to play -->
+        <video id="rules-vid"
+            src="effects/scroll.webm">
+        </video>
+        
+        <div class="rule-container">
+            <h1  class="rule-Inner"><u>Rules to Play the Game </u></h1>
+            
+                <ul class="book-content">
+                    <li>You can only place <b>exactly one </b> queen in each <b>row, column and diagonal</b>.</li>
+                    <li>On first tap you can mark <b>X</b> to the position where queen cannot be placed. </li>
+                    <li>On second tap Queen will be placed.</li>
+                </ul>
+           
+        </div>
+    </section>
+
+    <!-- next button -->
+    <button id="next-btn" class="next-button">Next</button>
+
+
+
+    <!-- section 2 the controls  -->
+     <section id="controls">
+        <!-- matrix size -->
+        <!-- choose matrix size -->
+        <!-- drop down menu -->
+
+        <label for="grid_size">
+            Select size of the grid:
+        </label>
+
+        <select name="grid size" id="grid_size">
+            <option value="" selected></option>
+            <option value="4">4x4</option>
+            <option value="5">5x5</option>
+            <option value="6">6x6</option>
+            <option value="7">7x7</option>
+            <option value="8">8x8</option>
+            <option value="9">9x9</option>
+            <option value="10">10x10</option>
+            <option value="11">11x11</option>
+        </select>
+
+        <!-- todo: easy merdium hard level -->
+
+    </section>
+
+    <!-- main section to play -->
+    <section>
+        <div id="gridContainer"></div>
+        <div id="confetti"></div>
+    </section>
+
+    <footer>
+        &copy; 2024 Divya Sharma. All rights reserved.
+    </footer>
+
+        <!-- Refresh Button -->
+    <div id="refresh-container">
+        <button id="refresh-btn">
+            <img src="effects/refresh.png" alt="Refresh" />
+        </button>
+    </div>
+        
+    
+
+    <!-- confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
